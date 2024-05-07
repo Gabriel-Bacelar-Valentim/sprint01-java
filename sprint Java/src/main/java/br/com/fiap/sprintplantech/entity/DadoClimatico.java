@@ -14,7 +14,7 @@ import java.util.Date;
 @Builder
 @Entity
 @Table(name = "TB_DADOS_CLIMATICOS")
-public class DadosClimaticos {
+public class DadoClimatico {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE,
@@ -25,7 +25,7 @@ public class DadosClimaticos {
             initialValue = 1,
             allocationSize = 1)
 
-    @Column(name = "ID")
+    @Column(name = "ID_DDCLIMATICOS")
     private Long id;
 
     @Column(name = "DATA")
@@ -45,10 +45,10 @@ public class DadosClimaticos {
             cascade = {CascadeType.MERGE, CascadeType.PERSIST}
     )
     @JoinColumn(
-            name = "Fazendas",
-            referencedColumnName = "ID",
+            name = "FAZENDAS",
+            referencedColumnName = "ID_DDCLIMATICOS",
             foreignKey = @ForeignKey(
-                    name = "dadosClimaticos_Fazendas_FK"
+                    name = "DADOSCLIMATICOS_FAZENDAS_FK"
             ))
-    private Fazendas fazendas;
+    private Fazenda fazenda;
 }

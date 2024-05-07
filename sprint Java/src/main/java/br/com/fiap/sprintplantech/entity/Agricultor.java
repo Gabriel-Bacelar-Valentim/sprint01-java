@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @Entity
 @Table(name = "TB_AGRICULTORES")
-public class Agricultores {
+public class Agricultor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE,
@@ -23,7 +23,7 @@ public class Agricultores {
             initialValue = 1,
             allocationSize = 1)
 
-    @Column(name = "ID")
+    @Column(name = "ID_AGRICULTORES")
     private Long id;
 
     @Column(name = "NOME")

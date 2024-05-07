@@ -6,8 +6,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -25,7 +23,7 @@ public class Solo {
             initialValue = 1,
             allocationSize = 1)
 
-    @Column(name = "ID")
+    @Column(name = "ID_SOLO")
     private Long id;
 
     @Column(name = "TIPO_SOLO")
@@ -46,10 +44,10 @@ public class Solo {
     )
     @JoinColumn(
             name = "Fazendas",
-            referencedColumnName = "ID",
+            referencedColumnName = "ID_SOLO",
             foreignKey = @ForeignKey(
                     name = "Solo_Fazendas_FK"
             ))
-    private Fazendas fazendas;
+    private Fazenda fazenda;
 
 }

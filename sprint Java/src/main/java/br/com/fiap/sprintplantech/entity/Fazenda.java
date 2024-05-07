@@ -6,15 +6,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Entity
 @Table(name = "TB_FAZENDAS")
-public class Fazendas {
+public class Fazenda {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE,
@@ -25,7 +23,7 @@ public class Fazendas {
             initialValue = 1,
             allocationSize = 1)
 
-    @Column(name = "ID")
+    @Column(name = "ID_FAZENDAS")
     private Long id;
 
     @Column(name = "NOME")
@@ -43,10 +41,10 @@ public class Fazendas {
     )
     @JoinColumn(
             name = "AGRICULTORES",
-            referencedColumnName = "ID",
+            referencedColumnName = "ID_FAZENDAS",
             foreignKey = @ForeignKey(
                     name = "Fazendas_Agricultores_FK"
             ))
-            private Agricultores agricultores;
+            private Agricultor agricultor;
 
 }

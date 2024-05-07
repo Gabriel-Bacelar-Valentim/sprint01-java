@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @Entity
 @Table(name = "TB_SAFRAS")
-public class Safras {
+public class Safra {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE,
@@ -23,7 +23,7 @@ public class Safras {
             initialValue = 1,
             allocationSize = 1)
 
-    @Column(name = "ID")
+    @Column(name = "ID_SAFRAS")
     private Long id;
 
     @Column(name = "CULTURA")
@@ -42,9 +42,9 @@ public class Safras {
     )
     @JoinColumn(
             name = "Fazendas",
-            referencedColumnName = "ID",
+            referencedColumnName = "ID_SAFRAS",
             foreignKey = @ForeignKey(
                     name = "Safras_Fazendas_FK"
             ))
-    private Fazendas fazendas;
+    private Fazenda fazenda;
 }
