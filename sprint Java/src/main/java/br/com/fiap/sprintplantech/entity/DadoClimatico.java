@@ -46,7 +46,7 @@ public class DadoClimatico {
     )
     @JoinColumn(
             name = "FAZENDAS",
-            referencedColumnName = "ID_DDCLIMATICOS",
+            referencedColumnName = "ID_FAZENDAS",
             foreignKey = @ForeignKey(
                     name = "DADOSCLIMATICOS_FAZENDAS_FK"
             ))

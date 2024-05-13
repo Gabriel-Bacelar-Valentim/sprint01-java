@@ -41,7 +41,7 @@ public class Fazenda {
     )
     @JoinColumn(
             name = "AGRICULTORES",
-            referencedColumnName = "ID_FAZENDAS",
+            referencedColumnName = "ID_AGRICULTORES",
             foreignKey = @ForeignKey(
                     name = "Fazendas_Agricultores_FK"
             ))

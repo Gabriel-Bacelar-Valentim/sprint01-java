@@ -44,7 +44,7 @@ public class Solo {
     )
     @JoinColumn(
             name = "Fazendas",
-            referencedColumnName = "ID_SOLO",
+            referencedColumnName = "ID_FAZENDAS",
             foreignKey = @ForeignKey(
                     name = "Solo_Fazendas_FK"
             ))

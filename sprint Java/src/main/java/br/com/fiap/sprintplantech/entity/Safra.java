@@ -42,7 +42,7 @@ public class Safra {
     )
     @JoinColumn(
             name = "Fazendas",
-            referencedColumnName = "ID_SAFRAS",
+            referencedColumnName = "ID_FAZENDAS",
             foreignKey = @ForeignKey(
                     name = "Safras_Fazendas_FK"
             ))
