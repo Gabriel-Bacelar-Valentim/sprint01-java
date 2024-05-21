@@ -13,3 +13,11 @@ Instruções:
 4-Passo ir na classe SprintPlantechApplication e selecionar do primeiro botão play de cima para baixo
 
 5-Passo após a aplicação rodar, abrir o postman e testar os endpoints que eu disponibilizei neste repositorio
+
+
+Nossa aplicação tem como público alvo: Agricultores, Produtores Rurais, Técnicos Agrícolas, Consultores Agrícolas e Seguradoras.
+E nossa aplicação propõe a solucionar os seguintes problemas:
+1- Gestão Ineficiente de Propriedades Rurais
+2- Dificuldade na Tomada de Decisões Agronômicas
+3- Desconhecimento sobre a Condição do Solo
+4- Baixa Produtividade, Qualidade e Sustentabilidade
