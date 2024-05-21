@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "a8d52aed-1fb0-4de0-84e0-53e697f59641",
+		"name": "Sprint01-JAVA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33364105"
+	},
+	"item": [
+		{
+			"name": "Agricultor",
+			"item": [
+				{
+					"name": "localhost/agricultores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/agricultores/1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"agricultores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/agricultores",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"nome\": \"Gabriel\",\r\n        \"cidade\": \"Sao Paulo\",\r\n        \"estado\": \"SP\",\r\n        \"telefone\": \"11997732139\",\r\n        \"email\": \"gabrielvalentim@gmail.com\"\r\n    }\r\n   \r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/agricultores",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"agricultores"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fazenda",
+			"item": [
+				{
+					"name": "localhost/fazendas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "departamento.sigla",
+								"value": "rh",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/fazendas",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"fazendas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/fazendas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Fazenda da Colina\",\r\n    \"tamanho_hectares\": 10,\r\n    \"localizacao\": \"Sao Pedro\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/fazendas",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"fazendas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DadoClimatico",
+			"item": [
+				{
+					"name": "localhost/dadosclimaticos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/dadosclimaticos",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"dadosclimaticos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/dadosclimaticos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"data\": \"2024-06-15\",\r\n    \"temperatura_media\": 30,\r\n    \"umidade_relativa\": 50,\r\n    \"precipitacao\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/dadosclimaticos",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"dadosclimaticos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Safra",
+			"item": [
+				{
+					"name": "localhost/safras",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/safras",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"safras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/safras",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost/safras",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"safras"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Solo",
+			"item": [
+				{
+					"name": "localhost/solo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/solo",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"solo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/solo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost/solo",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"solo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
